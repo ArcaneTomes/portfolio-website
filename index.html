@@ -2,40 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="A portfolio resume">
+    <meta name="author" content="Annelise Leonard">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Resume</title>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Annelise Leonard</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="#resume">Resume</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <section id="about">
         <h2>About Me</h2>
-        <p>Welcome to my portfolio website! I am a passionate developer...</p>
+        <p>Welcome to my portfolio website!</p>
     </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
+    <div class="row">
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="column"><div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p></div>
+            </div>
+            <div class="column"><div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p></div>
+            </div>
+            <div class="column"><div class="project">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p></div>
+         </div>
+    </div>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: example@example.com</p>
+        <p>Email: annelise.leonard2@gmail.com</p>
     </section>
     <script src="main.js"></script>
 </body>
 </html>
+
+
+<!--- 
+<i class="fa-brands fa-github"></i> 
+<i class="fa-brands fa-linkedin"></i>
+
+<i class="fa-brands fa-python"></i>
+<i class="fa-brands fa-square-js"></i>
+<i class="fa-brands fa-html5"></i>
+<i class="fa-brands fa-css"></i>
+<i class="fa-regular fa-database"></i>
+<i class="fa-regular fa-code-branch"></i>
+
+<i class="fa-brands fa-react"></i>
+
+<i class="fa-regular fa-file"></i>
+<i class="fa-regular fa-envelope"></i>
+
+<i class="fa-regular fa-microchip-ai"></i>
+<i class="fa-regular fa-head-side-gear"></i>
+
+--->

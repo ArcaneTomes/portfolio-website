@@ -34,5 +34,10 @@ section {
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px auto;
-  width: 50%;
+  width: 80%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
 }
