@@ -1,58 +1,42 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: 'Source Code Pro', sans-serif;
   text-align: center;
+  margin: 0;
+  background-image: url("blackgreenblue.jpg")
 }
 
 header {
-  background: #333;
-  color: white;
-  padding: 1em;
-}
-
-h1 {
-  text-transform: uppercase;
+  background-color: white;
+  color: edf6f9;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 8px 0;
+  z-index: 9;
 }
 
 nav {
-  background-color: #333;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: center;
+  align-items: center;
 }
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a:hover {
-  background-color: #246A73;
-}
-
 nav a {
-  color: white;
+  color: #83c5be;
   text-decoration: none;
-  padding: 16px;
-  border: none;
+  font-size: 16px;
+  padding: 8px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  font-family: 'Source Code Pro', sans-serif;
 }
-
-nav button {
-  display: inline;
-  margin: 0 15px;
-}
-
-section {
-  margin: 20px;
+nav a:hover {
+  background-color: #edf6f9;
+  border-radius: 5px;
 }
 
 .project {
   border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px auto;
   width: 80%;
 }
 
@@ -61,45 +45,47 @@ section {
   width: 33.33%;
 }
 
-
 /* DROPDOWN */
 .dropbtn {
-  background-color: #333;
+  background-color: #83c5be;
   color: white;
-  padding: 16px;
   font-size: 16px;
   border: none;
+  font-family: 'Source Code Pro';
+  display: flex;
+  border-radius: 5px;
 }
 .dropdown {
   position: relative;
   display: inline-block;
+  border-radius: 5px;
 }
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: 16px;
   z-index: 1;
+  border-radius: 5px;
 }
 .dropdown-content a {
   color: black;
-  padding: 12px 12px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #246A73;}
+.dropdown-content a:hover {background-color: #edf6f9;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #246A73;}
+.dropdown:hover .dropbtn {background-color: #edf6f9; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
 
 /* CONTACT FORM POPUP */
 .open-button {
   position: relative;
-  background-color: #333;
+  background-color: transparent;
   color: white;
-  padding: 16px;
   font-size: 16px;
   border: none;
+  display: flex;
 }
 .form-popup {
   display: none;
@@ -109,6 +95,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid #bcb8b1;
+  padding: 20px 20px;
   border-radius: 10px;
   background-color: #bcb8b1;
   z-index: 10;
@@ -116,9 +103,21 @@ section {
 
 .form-container input {
   height: 20px;
+  padding: 5px 5px;
+  margin: 10px 15px;
   border-radius: 5px;
   background-color: white;
   border: none;
+}
+
+label,input {
+  display: flex;
+}
+
+.form-container .name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container input:focus {
@@ -126,25 +125,18 @@ section {
   outline: none;
 }
 
-/* Set a style for the submit/login button */
 .form-container .btn {
   background-color: white;
   color: black;
-  padding: 16px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   width: 50%;
-  margin-bottom:10px;
   opacity: 0.8;
 }
-
-/* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: #bcb8b1;
   color: white;
 }
 
-/* Add some hover effects to buttons */
-.open-button:hover {background-color: #246A73;}
 .form-container .btn:hover {background-color: gray;}
