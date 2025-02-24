@@ -2,7 +2,8 @@ body {
   font-family: 'Source Code Pro', sans-serif;
   text-align: center;
   margin: 0;
-  background-image: url("blackgreenblue.jpg")
+  background-image: url("blackgreenblue.jpg");
+  background-size: cover;
 }
 
 header {
