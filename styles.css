@@ -1,14 +1,19 @@
+/* FULL PAGE */
 body {
   font-family: 'Source Code Pro', sans-serif;
   text-align: center;
   margin: 0;
-  background-image: url("blackgreenblue.jpg");
-  background-size: cover;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  background: url("blackgreenblue.png") no-repeat fixed center/cover;
+  color: white;
 }
 
-header {
-  background-color: white;
-  color: edf6f9;
+/* HEADER */
+#header {
+  background: transparent;
   position: sticky;
   top: 0;
   width: 100%;
@@ -16,128 +21,80 @@ header {
   z-index: 9;
 }
 
-nav {
+/* NAVIGATION BAR */
+.navbar {
   display: flex;
   justify-content: flex-end;
-  justify-items: center;
   align-items: center;
 }
-nav a {
-  color: #83c5be;
+.navbar a {
+  color: white;
   text-decoration: none;
+  padding: 14px 20px;
   font-size: 16px;
-  padding: 8px 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 5px;
-  font-family: 'Source Code Pro', sans-serif;
 }
-nav a:hover {
-  background-color: #edf6f9;
-  border-radius: 5px;
+.navbar a:hover {
+  background: #bcb8b1;
+  color: black;
 }
 
+/* MAIN */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* SLIDE 1 */
+
+/* SLIDE 2 */
 .project {
-  border: 1px solid #ddd;
+  border: 1px solid white;
   width: 80%;
 }
-
 .column {
   float: left;
   width: 33.33%;
 }
 
-/* DROPDOWN */
-.dropbtn {
-  background-color: #83c5be;
-  color: white;
-  font-size: 16px;
-  border: none;
-  font-family: 'Source Code Pro';
-  display: flex;
-  border-radius: 5px;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-  border-radius: 5px;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  font-size: 16px;
-  z-index: 1;
-  border-radius: 5px;
-}
-.dropdown-content a {
-  color: black;
-  text-decoration: none;
+/* SLIDE 3 */
+
+/* CONTACT FORM */
+label {
+  font-size: 14px;
+  color: gray;
   display: block;
-}
-.dropdown-content a:hover {background-color: #edf6f9;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #edf6f9; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
-
-/* CONTACT FORM POPUP */
-.open-button {
-  position: relative;
-  background-color: transparent;
-  color: white;
-  font-size: 16px;
-  border: none;
-  display: flex;
-}
-.form-popup {
-  display: none;
-  position: fixed;
-  width: 75%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #bcb8b1;
-  padding: 20px 20px;
-  border-radius: 10px;
-  background-color: #bcb8b1;
-  z-index: 10;
+  margin-top: 10px;
 }
 
-.form-container input {
-  height: 20px;
-  padding: 5px 5px;
-  margin: 10px 15px;
+/*
+.form-container input, textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
   border-radius: 5px;
-  background-color: white;
   border: none;
 }
 
-label,input {
-  display: flex;
-}
-
-.form-container .name{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-container input:focus {
+.form-container input:focus, textarea:focus {
   background-color: #ddd;
   outline: none;
 }
 
 .form-container .btn {
-  background-color: white;
-  color: black;
-  border: none;
+  background: white;
   border-radius: 10px;
   cursor: pointer;
   width: 50%;
   opacity: 0.8;
 }
-.form-container .cancel {
-  background-color: #bcb8b1;
-  color: white;
+
+.form-container .btn:hover {
+  background: gray;
 }
 
-.form-container .btn:hover {background-color: gray;}
+.form-container .cancel {
+  background: #bcb8b1;
+  color: white;
+*/
