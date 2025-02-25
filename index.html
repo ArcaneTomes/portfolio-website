@@ -7,80 +7,89 @@
     <meta name="author" content="Annelise Leonard">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pompiere&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio Resume</title>
 </head>
+<!------------------VISIBLE CODE---------------->
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar">
             <a href="#about">About</a>
-            <a href="#resume">Resume</a>
-            <div class="dropdown">
-                <button class="dropbtn"><a href="portfolio-link.html">Portfolio</a></button>
-                <div class="dropdown-content">
-                    <a href="#datascience">Data Science</a>
-                    <a href="#fullstack">Full-Stack Engineering</a>
-                    <a href="#database">Database Design</a>                        <a href="writing-research.html">Writing & Research</a>
-                    </div>
-                </div>
-            <button class="open-button" onclick="openForm()"><a>Contact</a></button>
-                <div class="form-popup" id="contact-form">
-                <form id="form" action="mailto:annelise.leonard2@gmail.com" method="post" class="form-container">
-                    <h2>Contact Me</h2>
-                    <section class="name" cols="2">
-                        <label for="first">First name</label>
-                            <input type="text" name="first" id="first" required>
-                        <label for="last">Last name</label>
-                            <input type="text" name="last" id="last" required>                            
-                    </section>
-                    <section class="email-address">
-                        <label for="email">Email address</label>
-                            <input type="text" name="email" id="email">
-                    </section>
-                    <section class="phone-number">
-                        <label for="phone">Phone number</label>
-                            <input type="tel" name="phone" id="phone" min="10" max="10">
-                    </section>
-                    <section class="messages">
-                        <label for="message">Message</label>
-                            <input type="text" name="message" id="message">
-                    </section>
-                    <section>
-                        <button type="submit" class="btn" onclick="closeForm()">Submit</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    </section>
-                </form>
-                </div>
+            <a href="#resume">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
+        </div>
     </header>
-    <section id="main">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio website!</p>
+   <main>
+    <section id="title" class="slide-header">
+        <h1>Hello and welcome!</h1>
     </section>
-    <div class="row">
+    <div id="slide1" class="slide">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>About me goes here.</p>
+        </section>
+    </div>
+    <div id="slide2" class="slide">
         <section id="portfolio">
             <h2>Portfolio</h2>
             <div class="column"><div class="project">
                 <h3>Project 1</h3>
-                <p>Description of project 1.</p></div>
+                <p>Description of project 1.</p>
+                </div>
             </div>
             <div class="column"><div class="project">
                 <h3>Project 2</h3>
-                <p>Description of project 2.</p></div>
+                <p>Description of project 2.</p>
+                </div>
             </div>
             <div class="column"><div class="project">
                 <h3>Project 3</h3>
-                <p>Description of project 3.</p></div>
-         </div>
+                <p>Description of project 3.</p>
+                </div>
+            </div>
     </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
+    <section id="contact" class="slide">
+        <div class="flex-container" id="contact">
+            <div class="contact-form">
+                <form action="mailto:annelise.leonard2@gmail.com" method="post">
+                    <h2>Contact Me</h2>
+                <section class="flex-container" cols="2">
+                    <label for="first">First name</label>
+                        <input type="text" name="firstname" id="first" placeholder="Your name..." required>
+                    <label for="last">Last name</label>
+                        <input type="text" name="lastname" id="last" placeholder="Your last name..." required>                            
+                </section>
+                <section class="flex-container">
+                    <label for="email">Email address</label>
+                        <input type="text" name="emailadd" id="email" pattern=".+@example\.com" placeholder="Your email..." required>
+                </section>
+                <section class="flex-container">
+                    <label for="phone">Phone number</label>
+                        <input type="tel" name="phonenum" id="phone" min="10" max="10" pattern="[0-9]{10}">
+                </section>
+                <section class="flex-container">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="messagebox" placeholder="Write something.." style="height:200px" required></textarea>
+                </section>
+                <section>
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn-cancel">Close</button>
+                </section>
+                </form>
+            </div>
+        </form>
+        </div>
+    </section>
+   </main>
+   <footer class="flex-container" id="footer">
         <p>annelise.leonard2@gmail.com</p>
         <p>636.248.7704</p>
-    </section>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
@@ -103,6 +112,9 @@
 <i class="fa-regular fa-envelope"></i>
 
 <i class="fa-regular fa-microchip-ai"></i>
+<i class="fa-regular fa-head-side-gear"></i>
+
+--->
 <i class="fa-regular fa-head-side-gear"></i>
 
 --->
